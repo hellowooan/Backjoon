@@ -1,0 +1,9 @@
+-- 코드를 입력하세요
+SELECT 
+    DR_NAME,
+    DR_ID,
+    MCDP_CD,
+    HIRE_YMD
+FROM DOCTOR
+WHERE MCDP_CD IN ('CS', 'GS') -- OR 말고 IN을 써야함
+ORDER BY HIRE_YMD DESC, DR_NAME ASC
